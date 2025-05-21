@@ -36,8 +36,7 @@ spec:
         volumeMounts:
         - name: hello-web-disk
           mountPath: "/var/www/html"
-  volumes:
-  - name:
-      name: hello-web-disk
+    volumes:
+    - name: hello-web-disk
       persistentVolumeClaim:
         claimName: hello-web-disk
