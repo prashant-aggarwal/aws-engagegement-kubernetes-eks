@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: statefulset-demo-0-pv
+  name: pv-statefulset-demo-0
   labels:
     type: MyApp
 spec:
