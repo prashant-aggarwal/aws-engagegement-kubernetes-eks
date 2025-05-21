@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: statefulset-demo-1-pvc
+  name: pvc-statefulset-demo-1
 spec:
   storageClassName: manual
   accessModes:
