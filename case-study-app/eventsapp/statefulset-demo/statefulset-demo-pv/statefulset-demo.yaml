@@ -35,7 +35,13 @@ spec:
           volumeMounts:
             - name: hello-web-disk-volume
               mountPath: "/var/www/html"
-      volumes:
-        - name: hello-web-disk-volume
-          persistentVolumeClaim:
-            claimName: pvc
+  volumeClaimTemplates:
+  - metadata:
+      name: pvc
+    spec:
+      accessModes:
+      - ReadWriteOnce
+      resources:
+        requests:
+          storage: 5Gi
+      storageClassName: ""  # Important: leave empty to match manually created PVs
