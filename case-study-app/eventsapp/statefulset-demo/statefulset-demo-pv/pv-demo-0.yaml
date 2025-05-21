@@ -5,7 +5,7 @@ metadata:
   labels:
     type: MyApp
 spec:
-  storageClassName: gp2
+  storageClassName: manual
   capacity:
     storage: 5Gi
   accessModes:
